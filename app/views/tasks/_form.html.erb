@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :state %><br>
-    <%= f.select :state, [["pas fait"], ["fait"]] %>
+    <%= f.select :state, Task::OPTION_STATES %>
   </div>
   <div class="actions">
     <%= f.submit %>
